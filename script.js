@@ -1,7 +1,7 @@
 console.log('hello world');
 
 const thankYou = document.querySelector('.thank-you');
-const form = document.querySelector('form');
+const form = document.querySelector('.lc-form');
 const submitBtn = document.querySelector('#submit');
 
 form.addEventListener('submit', function (e) {
