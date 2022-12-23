@@ -3,50 +3,52 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
 		<title>Document</title>
 	</head>
 
 	<form
+		class="lc-form"
 		action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
 		method="POST"
 	>
+		<h1>New Lead Submission</h1>
 		<input type="hidden" name="oid" value="00D8A000000MukH" />
 		<input type="hidden" name="retURL" value="http://" />
 
-		<!--  ----------------------------------------------------------------------  -->
-		<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-		<!--  these lines if you wish to test in debug mode.                          -->
-		<!--  <input type="hidden" name="debug" value=1>                              -->
-		<!--  <input type="hidden" name="debugEmail" value="simdrew07@gmail.com">     -->
-		<!--  ----------------------------------------------------------------------  -->
+		<div class="input-box">
+			<label for="first_name">First Name</label
+			><input
+				id="first_name"
+				maxlength="40"
+				name="first_name"
+				size="20"
+				type="text"
+			/><br />
+		</div>
 
-		<label for="first_name">First Name</label
-		><input
-			id="first_name"
-			maxlength="40"
-			name="first_name"
-			size="20"
-			type="text"
-		/><br />
+		<div class="input-box">
+			<label for="last_name">Last Name</label
+			><input
+				id="last_name"
+				maxlength="80"
+				name="last_name"
+				size="20"
+				type="text"
+			/><br />
+		</div>
 
-		<label for="last_name">Last Name</label
-		><input
-			id="last_name"
-			maxlength="80"
-			name="last_name"
-			size="20"
-			type="text"
-		/><br />
+		<div class="input-box">
+			<label for="email">Email</label
+			><input
+				id="email"
+				maxlength="80"
+				name="email"
+				size="20"
+				type="text"
+			/><br />
+		</div>
 
-		<label for="email">Email</label
-		><input
-			id="email"
-			maxlength="80"
-			name="email"
-			size="20"
-			type="text"
-		/><br />
-
-		<input type="submit" name="submit" />
+		<input class="submit-btn" type="submit" name="submit" />
 	</form>
 </html>
